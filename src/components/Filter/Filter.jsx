@@ -1,8 +1,8 @@
-import { useSelector, useDispatch } from "react-redux";
 import PropTypes from "prop-types";
+import { useSelector, useDispatch } from "react-redux";
 import { nanoid } from "nanoid";
 import { Label, Input } from "./Filter.styled";
-import * as actions from "redux/contacts/contacts-actions";
+import { actions } from "redux/contacts";
 import { getFilterValue } from "redux/contacts/contacts-selectors";
 
 const Filter = () => {

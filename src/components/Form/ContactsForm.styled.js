@@ -1,6 +1,7 @@
+import { Form } from "formik";
 import styled from "@emotion/styled/macro";
 
-export const Form = styled.form`
+export const FormWrapper = styled(Form)`
   display: flex;
   flex-direction: column;
 `;
@@ -32,4 +33,11 @@ export const Button = styled.button`
   &:focus {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
   }
+`;
+
+export const ValidationMessage = styled.div`
+  font-size: 12px;
+  color: purple;
+  margin-top: 5px;
+  margin-bottom: 5px;
 `;
